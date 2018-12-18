@@ -3,12 +3,11 @@
 ; Copyright © 2016 Pete Batard <pete@akeo.ie> - Public Domain
 ;
 
-include 'x64.inc'
 include 'utf8.inc'
-include 'efi.inc'
 include 'format/format.inc'
 
 format pe64 dll efi
+include 'efi.inc'
 entry efi_main
 
 section '.text' code executable readable
